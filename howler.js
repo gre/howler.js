@@ -1771,7 +1771,7 @@
 
     if (typeof x === 'number') {
       self._velocity = [x, y, z];
-      self.ctx.listener.setVelocity(self._velocity[0], self._velocity[1], self._velocity[2]);
+      //self.ctx.listener.setVelocity(self._velocity[0], self._velocity[1], self._velocity[2]);
     } else {
       return self._velocity;
     }
@@ -2039,7 +2039,7 @@
               setupPanner(sound);
             }
 
-            sound._panner.setVelocity(x, y, z);
+            //sound._panner.setVelocity(x, y, z);
           }
         } else {
           return sound._velocity;
@@ -2230,7 +2230,7 @@
     sound._panner.rolloffFactor = sound._pannerAttr.rolloffFactor;
     sound._panner.setPosition(sound._pos[0], sound._pos[1], sound._pos[2]);
     sound._panner.setOrientation(sound._orientation[0], sound._orientation[1], sound._orientation[2]);
-    sound._panner.setVelocity(sound._velocity[0], sound._velocity[1], sound._velocity[2]);
+    //sound._panner.setVelocity(sound._velocity[0], sound._velocity[1], sound._velocity[2]);
     sound._panner.connect(sound._node);
 
     // Update the connections.
